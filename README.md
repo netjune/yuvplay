@@ -4,6 +4,8 @@ A tool for raw yuv files: displaying, analysising, comparing, transcoding ...
 # build
 Can be built with VC 6.0 or VS2015.
 
+File encoding: Chinese GBK.
+
 # plugins
 Support two types of plugins currently: formater and filter.
 
