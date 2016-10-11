@@ -1,0 +1,99 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: yuvplay - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP95.tmp" with contents
+[
+/nologo /MT /W3 /GX /Od /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Release/yuvplay.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\VC\yuvplay-2.1.7.2\yuvplayDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP95.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP96.tmp" with contents
+[
+Vfw32.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/yuvplay.pdb" /machine:I386 /nodefaultlib:"libc.lib" /out:"Release/yuvplay.exe" 
+".\Release\CmpDlg.obj"
+".\Release\common.obj"
+".\Release\DlgAString.obj"
+".\Release\DlgFilter.obj"
+".\Release\DlgFilter_Y8.obj"
+".\Release\DlgFilterGain.obj"
+".\Release\DlgFilters.obj"
+".\Release\DlgFormater.obj"
+".\Release\DlgMsg.obj"
+".\Release\DlgPixel.obj"
+".\Release\DlgProperty.obj"
+".\Release\DlgSimpleCfg.obj"
+".\Release\DlgTranscode.obj"
+".\Release\DlgValues2.obj"
+".\Release\DlgValues2Set.obj"
+".\Release\FileSource.obj"
+".\Release\Filter_mirror.obj"
+".\Release\Filter_test.obj"
+".\Release\Filter_upset.obj"
+".\Release\FilterMan.obj"
+".\Release\Formater_420SP.obj"
+".\Release\Formater_422SP.obj"
+".\Release\Formater_BGR24.obj"
+".\Release\Formater_I420.obj"
+".\Release\Formater_I422.obj"
+".\Release\Formater_RGB24.obj"
+".\Release\Formater_UYVY.obj"
+".\Release\Formater_Y16.obj"
+".\Release\Formater_Y8.obj"
+".\Release\Formater_YUV444.obj"
+".\Release\Formater_YUYV.obj"
+".\Release\Formater_YV12.obj"
+".\Release\Formater_YV16.obj"
+".\Release\FormaterMan.obj"
+".\Release\ImageWnd.obj"
+".\Release\Inner_modules.obj"
+".\Release\MenuList.obj"
+".\Release\mFile.obj"
+".\Release\PosWnd.obj"
+".\Release\Render.obj"
+".\Release\StdAfx.obj"
+".\Release\ThreadTranscode.obj"
+".\Release\ValuesDlg.obj"
+".\Release\yuvDoc.obj"
+".\Release\yuvplay.obj"
+".\Release\yuvplayDlg.obj"
+".\Release\yuvplay.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP96.tmp"
+<h3>Output Window</h3>
+Compiling...
+yuvplayDlg.cpp
+D:\VC\yuvplay-2.1.7.2\Render.h(135) : warning C4244: '=' : conversion from '__int64' to 'unsigned char', possible loss of data
+D:\VC\yuvplay-2.1.7.2\Render.h(136) : warning C4244: '=' : conversion from '__int64' to 'unsigned char', possible loss of data
+D:\VC\yuvplay-2.1.7.2\Render.h(137) : warning C4244: '=' : conversion from '__int64' to 'unsigned char', possible loss of data
+D:\VC\yuvplay-2.1.7.2\Render.h(148) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+D:\VC\yuvplay-2.1.7.2\Render.h(149) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+D:\VC\yuvplay-2.1.7.2\Render.h(150) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+D:\VC\yuvplay-2.1.7.2\yuvplayDlg.cpp(276) : warning C4101: 'x' : unreferenced local variable
+D:\VC\yuvplay-2.1.7.2\yuvplayDlg.cpp(533) : warning C4101: 'pBtn' : unreferenced local variable
+D:\VC\yuvplay-2.1.7.2\yuvplayDlg.cpp(537) : warning C4101: 'index' : unreferenced local variable
+D:\VC\yuvplay-2.1.7.2\yuvplayDlg.cpp(536) : warning C4101: 'pos' : unreferenced local variable
+D:\VC\yuvplay-2.1.7.2\yuvplayDlg.cpp(534) : warning C4101: 'n' : unreferenced local variable
+D:\VC\yuvplay-2.1.7.2\yuvplayDlg.cpp(1184) : warning C4101: 'pEdit' : unreferenced local variable
+D:\VC\yuvplay-2.1.7.2\yuvplayDlg.cpp(1634) : warning C4101: 'nIndex' : unreferenced local variable
+D:\VC\yuvplay-2.1.7.2\yuvplayDlg.cpp(1831) : warning C4101: 'pos' : unreferenced local variable
+D:\VC\yuvplay-2.1.7.2\yuvplayDlg.cpp(1964) : warning C4101: 'type' : unreferenced local variable
+D:\VC\yuvplay-2.1.7.2\yuvplayDlg.cpp(2276) : warning C4101: 'id' : unreferenced local variable
+D:\VC\yuvplay-2.1.7.2\yuvplayDlg.cpp(2767) : warning C4101: 'val' : unreferenced local variable
+D:\VC\yuvplay-2.1.7.2\yuvplayDlg.cpp(2881) : warning C4101: 'n' : unreferenced local variable
+D:\VC\yuvplay-2.1.7.2\yuvplayDlg.cpp(3287) : warning C4018: '<' : signed/unsigned mismatch
+D:\VC\yuvplay-2.1.7.2\yuvplayDlg.cpp(3291) : warning C4018: '<' : signed/unsigned mismatch
+D:\VC\yuvplay-2.1.7.2\yuvplayDlg.cpp(3277) : warning C4101: 'n' : unreferenced local variable
+Linking...
+
+
+
+<h3>Results</h3>
+yuvplay.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

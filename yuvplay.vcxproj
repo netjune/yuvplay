@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName />
+    <SccLocalPath />
+    <Keyword>MFCProj</Keyword>
+    <ProjectGuid>{E41E4D71-E64B-4989-8B64-C66C2141269E}</ProjectGuid>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140_xp</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140_xp</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Debug\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Debug\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\Debug\yuvplay.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\Debug\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Debug\yuvplay.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug\yuvplay.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <IgnoreSpecificDefaultLibraries>libc.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <OutputFile>.\Debug\yuvplay.exe</OutputFile>
+      <AdditionalDependencies>Vfw32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Release\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\Release\yuvplay.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\Release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release\</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Release\yuvplay.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release\yuvplay.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <SubSystem>Windows</SubSystem>
+      <IgnoreSpecificDefaultLibraries>libc.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <OutputFile>.\Release\yuvplay.exe</OutputFile>
+      <AdditionalDependencies>Vfw32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="CmpDlg.cpp" />
+    <ClCompile Include="common.cpp" />
+    <ClCompile Include="DlgAString.cpp" />
+    <ClCompile Include="DlgFilter.cpp" />
+    <ClCompile Include="DlgFilterGain.cpp" />
+    <ClCompile Include="DlgFilters.cpp" />
+    <ClCompile Include="DlgFilter_Y8.cpp" />
+    <ClCompile Include="DlgFormater.cpp" />
+    <ClCompile Include="DlgMsg.cpp" />
+    <ClCompile Include="DlgPixel.cpp" />
+    <ClCompile Include="DlgProperty.cpp" />
+    <ClCompile Include="DlgSimpleCfg.cpp" />
+    <ClCompile Include="DlgTranscode.cpp" />
+    <ClCompile Include="DlgValues2.cpp" />
+    <ClCompile Include="DlgValues2Set.cpp" />
+    <ClCompile Include="FileSource.cpp" />
+    <ClCompile Include="FilterMan.cpp" />
+    <ClCompile Include="Filter_mirror.cpp" />
+    <ClCompile Include="Filter_test.cpp" />
+    <ClCompile Include="Filter_upset.cpp" />
+    <ClCompile Include="FormaterMan.cpp" />
+    <ClCompile Include="Formater_420SP.cpp" />
+    <ClCompile Include="Formater_422SP.cpp" />
+    <ClCompile Include="Formater_BGR24.cpp" />
+    <ClCompile Include="Formater_I420.cpp" />
+    <ClCompile Include="Formater_I422.cpp" />
+    <ClCompile Include="Formater_RGB24.cpp" />
+    <ClCompile Include="Formater_UYVY.cpp" />
+    <ClCompile Include="Formater_Y16.cpp" />
+    <ClCompile Include="Formater_Y8.cpp" />
+    <ClCompile Include="Formater_YUV444.cpp" />
+    <ClCompile Include="Formater_YUYV.cpp" />
+    <ClCompile Include="Formater_YV12.cpp" />
+    <ClCompile Include="Formater_YV16.cpp" />
+    <ClCompile Include="ImageWnd.cpp" />
+    <ClCompile Include="Inner_modules.cpp" />
+    <ClCompile Include="MenuList.cpp" />
+    <ClCompile Include="mFile.cpp" />
+    <ClCompile Include="PosWnd.cpp" />
+    <ClCompile Include="Render.cpp" />
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="ThreadTranscode.cpp" />
+    <ClCompile Include="ValuesDlg.cpp" />
+    <ClCompile Include="yuvDoc.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
+    </ClCompile>
+    <ClCompile Include="yuvplay.cpp" />
+    <ClCompile Include="yuvplayDlg.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="yuvplay.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CmpDlg.h" />
+    <ClInclude Include="common.h" />
+    <ClInclude Include="DlgAString.h" />
+    <ClInclude Include="DlgFilter.h" />
+    <ClInclude Include="DlgFilterGain.h" />
+    <ClInclude Include="DlgFilters.h" />
+    <ClInclude Include="DlgFilter_Y8.h" />
+    <ClInclude Include="DLGFormater.h" />
+    <ClInclude Include="DlgMsg.h" />
+    <ClInclude Include="DlgPixel.h" />
+    <ClInclude Include="DLGProperty.h" />
+    <ClInclude Include="DlgSimpleCfg.h" />
+    <ClInclude Include="DlgTranscode.h" />
+    <ClInclude Include="DlgValues2.h" />
+    <ClInclude Include="DlgValues2Set.h" />
+    <ClInclude Include="FileSource.h" />
+    <ClInclude Include="FilterMan.h" />
+    <ClInclude Include="Filter_mirror.h" />
+    <ClInclude Include="Filter_test.h" />
+    <ClInclude Include="Filter_upset.h" />
+    <ClInclude Include="FormaterMan.h" />
+    <ClInclude Include="Formater_420SP.h" />
+    <ClInclude Include="Formater_422SP.h" />
+    <ClInclude Include="Formater_BGR24.h" />
+    <ClInclude Include="Formater_I420.h" />
+    <ClInclude Include="Formater_I422.h" />
+    <ClInclude Include="Formater_RGB24.h" />
+    <ClInclude Include="Formater_UYVY.h" />
+    <ClInclude Include="Formater_Y16.h" />
+    <ClInclude Include="Formater_Y8.h" />
+    <ClInclude Include="Formater_YUV444.h" />
+    <ClInclude Include="Formater_YUYV.h" />
+    <ClInclude Include="Formater_YV12.h" />
+    <ClInclude Include="Formater_YV16.h" />
+    <ClInclude Include="ImageWnd.h" />
+    <ClInclude Include="Inner_modules.h" />
+    <ClInclude Include="MenuList.h" />
+    <ClInclude Include="Message.h" />
+    <ClInclude Include="mFile.h" />
+    <ClInclude Include="ModuleList.h" />
+    <ClInclude Include="Plugin.h" />
+    <ClInclude Include="PosWnd.h" />
+    <ClInclude Include="Render.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="ThreadTranscode.h" />
+    <ClInclude Include="ValuesDlg.h" />
+    <ClInclude Include="Version.h" />
+    <ClInclude Include="yuvDoc.h" />
+    <ClInclude Include="yuvplay.h" />
+    <ClInclude Include="yuvplayDlg.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="res\default1.bin" />
+    <CustomBuild Include="res\yuvplay.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\icon1.ico" />
+    <Image Include="res\yuvplay.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="manifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Manifest Include="yuvplay.exe.manifest" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
